@@ -102,7 +102,7 @@ public class SharePictureTab extends Fragment implements View.OnClickListener {
                     } else {
 
                         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                        receivedImageBitmap.compress(Bitmap.CompressFormat.PNG, 25, byteArrayOutputStream);
+                        receivedImageBitmap.compress(Bitmap.CompressFormat.PNG, 10, byteArrayOutputStream);
                         byte[] bytes = byteArrayOutputStream.toByteArray();
                         ParseFile parseFile = new ParseFile("img.png", bytes);
                         ParseObject parseObject = new ParseObject("photo");
